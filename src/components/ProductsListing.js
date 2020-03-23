@@ -34,7 +34,6 @@ const PRODUCTS_LISTING_QUERY = graphql`
 
 const ProductsListing = () => {
   const { allShopifyProduct } = useStaticQuery(PRODUCTS_LISTING_QUERY)
-  console.log(allShopifyProduct)
   return (
     <div>
       {allShopifyProduct.edges.map(edge => (
